@@ -25,6 +25,9 @@
 		1240ACE518FD5D610018EE9C /* banner.html in Resources */ = {isa = PBXBuildFile; fileRef = 1240ACE418FD5D610018EE9C /* banner.html */; };
 		1240ACE718FD604E0018EE9C /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1240ACE618FD604E0018EE9C /* README.rtf */; };
 		1258DE0018FD872F005EDE2E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1258DDFF18FD872F005EDE2E /* AudioToolbox.framework */; };
+		125F012918FF29820022CC02 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 125F012618FF29820022CC02 /* home.png */; };
+		125F012A18FF29820022CC02 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 125F012718FF29820022CC02 /* play.png */; };
+		125F012B18FF29820022CC02 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 125F012818FF29820022CC02 /* stop.png */; };
 		1294F65318FCD97C0049770B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1294F65218FCD97C0049770B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		1240ACE618FD604E0018EE9C /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 		1258DDFE18FD872E005EDE2E /* RadioStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RadioStream.entitlements; sourceTree = "<group>"; };
 		1258DDFF18FD872F005EDE2E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		125F012618FF29820022CC02 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		125F012718FF29820022CC02 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		125F012818FF29820022CC02 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		1294F65218FCD97C0049770B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -173,6 +179,9 @@
 		1240ACD718FD590A0018EE9C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				125F012618FF29820022CC02 /* home.png */,
+				125F012718FF29820022CC02 /* play.png */,
+				125F012818FF29820022CC02 /* stop.png */,
 				1240ACE418FD5D610018EE9C /* banner.html */,
 				1240ACE218FD5D240018EE9C /* me.gif */,
 			);
@@ -264,7 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1240ACE318FD5D240018EE9C /* me.gif in Resources */,
+				125F012A18FF29820022CC02 /* play.png in Resources */,
+				125F012B18FF29820022CC02 /* stop.png in Resources */,
 				1240ACE518FD5D610018EE9C /* banner.html in Resources */,
+				125F012918FF29820022CC02 /* home.png in Resources */,
 				0DFF3AF118F6314D005E0326 /* Images.xcassets in Resources */,
 				0DFF3AE318F6314D005E0326 /* InfoPlist.strings in Resources */,
 				1240ACE718FD604E0018EE9C /* README.rtf in Resources */,
@@ -420,8 +432,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "april 9/RadioStream-Prefix.pch";
 				INFOPLIST_FILE = "april 9/RadioStream-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = RadioStream;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -437,8 +451,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "april 9/RadioStream-Prefix.pch";
 				INFOPLIST_FILE = "april 9/RadioStream-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = RadioStream;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
